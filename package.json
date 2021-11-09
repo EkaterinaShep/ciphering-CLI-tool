@@ -1,0 +1,21 @@
+{
+  "name": "ciphering-cli-tool",
+  "version": "1.0.0",
+  "description": "CLI tool that encode and decode a text by 3 substitution ciphers: Caesar cipher, Atbash cipher and ROT-8 as variation of ROT-13 cipher",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js -c C1-C1-R0-A -i input.txt -o output.txt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EkaterinaShep/ciphering-CLI-tool.git"
+  },
+  "author": "EkaterinaShep",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EkaterinaShep/ciphering-CLI-tool/issues"
+  },
+  "homepage": "https://github.com/EkaterinaShep/ciphering-CLI-tool#readme"
+}
