@@ -6,11 +6,20 @@ import { Caesar, ROT8, Atbash } from './streams/filemodifiers.mjs';
 import { code } from './ciphers/chiphering.mjs';
 import { getArrFromStr } from './helpers/helpers-general-js.mjs';
 import { pipeline } from 'stream';
+import { checkAccessToFiles } from './validation/files-access.mjs';
 
 const args = getArgs();
 const config = getArg(args, '-c') || getArg(args, '--config');
 const inputFile = getArg(args, '-i') || getArg(args, '--input');
 const outputFile = getArg(args, '-o') || getArg(args, '--output');
+
+checkAccessToFiles(
+  { inputFile, outputFile },
+  {
+    inputFile: constants.F_OK | constants.R_OK,
+    outputFile: constants.F_OK | constants.R_OK | constants.W_OK,
+  }
+);
 
 const reader = new FileReader(inputFile);
 const modifiers = getModifiersArr();

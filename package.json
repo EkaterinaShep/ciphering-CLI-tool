@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js -c C1-C1-R0-A -i input.txt -o output.txt"
+    "start": "node index.mjs -c C1-C1-R0-A -i input.txt -o output.txt"
   },
   "repository": {
     "type": "git",

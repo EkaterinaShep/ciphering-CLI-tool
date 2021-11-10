@@ -1,6 +1,7 @@
 import process from 'process';
 import { getIndex } from '../helpers/helpers-general-js.mjs';
-/* --------------------------------- Helpers -------------------------------- */
+
+/* --------------------------------- Functions -------------------------------- */
 // getArgs
 function getArgs() {
   return process.argv;
