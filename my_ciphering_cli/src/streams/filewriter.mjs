@@ -21,13 +21,12 @@ class FileWriter extends Writable {
   }
 
   _write(chunk, encoding, callback) {
-
     fs.write(this.fd, chunk, callback);
   }
 
   _destroy(err, callback) {
     if (this.fd) {
-      fs.write(this.fd, '\n', callback)
+      fs.write(this.fd, '\n', callback);
       fs.close(this.fd, (er) => callback(er || err));
     } else {
       callback(err);

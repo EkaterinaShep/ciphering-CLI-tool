@@ -1,4 +1,9 @@
 /* --------------------------------- Helpers -------------------------------- */
+// flatArr
+function flatArr(arr, depth) {
+  return arr.flat(depth);
+}
+
 // getIndex
 function getIndex(arr, element) {
   return arr.indexOf(element);
@@ -32,18 +37,12 @@ function pipe(...fns) {
   };
 }
 
-// curry
-function curry(func) {
-  return function curried(...args) {
-    if (args.length >= func.length) {
-      return func.apply(this, args);
-    } else {
-      return function (...args2) {
-        return curried.apply(this, args.concat(args2));
-      };
-    }
-  };
-}
-
 /* --------------------------------- Exports -------------------------------- */
-export { getIndex, curry, getStringFromArray, getArrFromStr, isUpperCased, pipe };
+export {
+  flatArr,
+  getIndex,
+  getStringFromArray,
+  getArrFromStr,
+  isUpperCased,
+  pipe,
+};

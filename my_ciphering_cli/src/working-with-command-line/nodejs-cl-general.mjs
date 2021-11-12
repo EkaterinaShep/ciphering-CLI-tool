@@ -8,11 +8,13 @@ function getArgs() {
 }
 
 // getArg
-function getArg(args, flag) {
-  const flagIndex = getIndex(args, `${flag}`);
+function getOptionValue(userArgs, option) {
+  const optionIndex = getIndex(userArgs, `${option}`);
 
-  return flagIndex === -1 ? null : args[flagIndex + 1];
+  return optionIndex === -1 || optionIndex === userArgs.length - 1
+    ? null
+    : userArgs[optionIndex + 1].trim();
 }
 
 /* --------------------------------- Exports -------------------------------- */
-export { getArg, getArgs };
+export { getOptionValue, getArgs };

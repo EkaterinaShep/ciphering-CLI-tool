@@ -1,5 +1,4 @@
 import {
-  curry,
   getStringFromArray,
   getArrFromStr,
   isUpperCased,
@@ -51,7 +50,7 @@ function atbash(itemIndexInAbc) {
 
 function getShift(cipherName, cipherDirection) {
   const shift = cipherName === 'caesar' ? 1 : cipherName === 'rot8' ? 8 : 0;
-  return cipherDirection === 1 ? shift : (-shift + ABC_COUNT);
+  return cipherDirection === 1 ? shift : -shift + ABC_COUNT;
 }
 
 function getIndexInAbc(char) {

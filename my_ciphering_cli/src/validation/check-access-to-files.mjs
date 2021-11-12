@@ -1,17 +1,21 @@
 import { accessSync } from 'fs';
-import { exit } from 'process';
 import { FileAccessError } from '../errors/custom-errors.mjs';
+import { handleError } from '../errors/handle-error.mjs';
 
 function checkAccessToFiles(files, mode) {
   try {
     Object.entries(files).forEach((entry) => {
       const filePath = entry[1];
       const fileName = entry[0];
+
+      if (!filePath) {
+        return;
+      }
+
       checkFileAccessSync(filePath, mode[fileName]);
     });
   } catch (err) {
-    console.error(`${err.name}: ${err.message}`);
-    exit(err.statusCode);
+    handleError(err);
   }
 }
 
