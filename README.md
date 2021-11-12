@@ -2,7 +2,7 @@
 
 Encryption and decryption tool.
 
-[Features](#features) | [How it works](#how-it-works) | [Project files and folders description](#project-files-and-folders-description) | [Get started](#get-started)
+[Features](#features) | [How it works](#how-it-works) | [Project files and folders description](#project-files-and-folders-description) | [Get started](#get-started) | [Options](#options) | [Usage examples](#usage-examples)
 
 ## Features
 
@@ -36,26 +36,63 @@ Ciphering CLI tool:
 
 2. Clone the repository (you must already have [git](https://git-scm.com/downloads) installed) by typing in the command shell:
 
-`git clone https://github.com/EkaterinaShep/ciphering-CLI-tool`
+   ```sh
+   git clone https://github.com/EkaterinaShep/ciphering-CLI-tool
+   ```
 
 3. Go into the repository:
 
-`cd ciphering-CLI-tool`
+   ```sh
+   cd ciphering-CLI-tool
+   ```
 
 4. Switch branch:
 
-`git checkout ciphering-CLI-tool`
+   ```sh
+   git checkout ciphering-CLI-tool
+   ```
 
 5. Write text to `input.txt` file.
 
 6. Type in the command shell:
 
-`node -c "C1-C1-R0-A" -i "input.txt" -o "output.txt"`
+   ```sh
+   node my_ciphering_cli -c "C1-C1-R0-A" -i "input.txt" -o "output.txt"
+   ```
 
-Where "C1-C1-R0-A" - config, "input.txt" - path to input file, "output.txt" - path to output file.
+   Where "C1-C1-R0-A" is a config, "input.txt" is a path to input file, "output.txt" is a path to output file.
 
 7. Open output file. You should see the result.
 
 That's it!
 
-## Commands and options
+## Options
+
+The tool accepts 3 options (short alias and full name): 1 mandatory (**-c**, or **--config**) and 2 optional (**-i**, or **--input**, and **-o**, or **--output**).
+
+Each option takes a value. The value is required and should be enclosed in double quotes.
+
+### -c, --config
+
+Config for ciphers. Mandatory option.
+
+The pattern for config value is {XY(-)}n, where:
+
+- `X` is a cipher mark: `C` (Caesar cipher (with shift 1)), `A` (Atbash cipher), `R` (ROT-8 cipher).
+- `Y` is a flag of encoding or decoding: `1` (encoding), `0` (decoding). The flag mandatory for Caesar and ROT-8 ciphers and should not be passed for Atbash cipher.
+
+For example, config value `"C1-C1-R0-A"` means "encode by Caesar cipher => encode by Caesar cipher => decode by ROT-8 => use Atbash"
+
+### -i, --input
+
+A path to input file. Optional option.
+
+If the option is missed, text will be read from a command shell. To run ciphering, press `Enter`. To stop Ciphering CLI tool, type `Ctrl + C`.
+
+### -o, --output
+
+A path to output file.
+
+If the option is missed, text will be written to a command shell.
+
+## Usage examples
