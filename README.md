@@ -14,8 +14,9 @@ Encryption and decryption tool.
 ## Features
 
 - Encoding and decoding text
+- Transformation of letters of the English alphabet and keeping other characters untouched
 - Support of 3 substitution ciphers: Caesar cipher, Atbash cipher and ROT-8 as variation of ROT-13 cipher
-- Reading and writing from and to a file or a command shell, respectively.
+- Reading and writing from and to a file or a command shell, respectively
 
 ## How it works
 
@@ -67,7 +68,7 @@ Ciphering CLI tool:
    node my_ciphering_cli -c "C1-C1-R0-A" -i "input.txt" -o "output.txt"
    ```
 
-   Where "C1-C1-R0-A" is a [config](#-c,---config), "input.txt" is a path to input, "output.txt" is a path to output file.
+   Where `-c "C1-C1-R0-A"`, `-i "input.txt"`, `-o "output.txt"` are options. `-c`, `i`, `-o` are short aliases. "C1-C1-R0-A", "input.txt", "output.txt" are values of the options:  "C1-C1-R0-A" is a [config](#-c---config), "input.txt" is a path to [input file](#-i---input), "output.txt" is a path to [output file](#-o---output).
 
 7. Open output file. You should see the result.
 
@@ -98,7 +99,7 @@ If the option is missed, text will be read from a command shell. To run cipherin
 
 ### -o, --output
 
-A path to output file.
+A path to output file. Optional option.
 
 If the option is missed, text will be written to a command shell.
 
