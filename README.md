@@ -67,7 +67,7 @@ Ciphering CLI tool:
    node my_ciphering_cli -c "C1-C1-R0-A" -i "input.txt" -o "output.txt"
    ```
 
-   Where "C1-C1-R0-A" is a config, "input.txt" is a path to input file, "output.txt" is a path to output file.
+   Where "C1-C1-R0-A" is a [config](#-c,---config), "input.txt" is a path to input, "output.txt" is a path to output file.
 
 7. Open output file. You should see the result.
 
