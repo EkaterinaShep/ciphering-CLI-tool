@@ -14,7 +14,7 @@ Encryption and decryption tool.
 ## Features
 
 - Encoding and decoding text
-- Transformation of letters of the English alphabet and keeping other characters untouched
+- Transformation of letters of the English alphabet keeping other characters untouched
 - Support of 3 substitution ciphers: Caesar cipher, Atbash cipher and ROT-8 as variation of ROT-13 cipher
 - Reading and writing from and to a file or a command shell, respectively
 
