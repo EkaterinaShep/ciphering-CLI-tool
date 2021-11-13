@@ -2,7 +2,7 @@
 Encryption and decryption tool.
 
 <p align="center">
-<img src="https://user-images.githubusercontent.com/77797681/141607133-275686c7-e412-4272-83a7-41eb630f434e.jpg" alt="ciphering-cli-tool" width="750"/>
+<img src="https://user-images.githubusercontent.com/77797681/141607133-275686c7-e412-4272-83a7-41eb630f434e.jpg" alt="ciphering-cli-tool"/>
 </p>
 
 [Features](#features) | [How it works](#how-it-works) | [Project files and folders description](#project-files-and-folders-description) | [Get started](#get-started) | [Options](#options) | [Usage examples](#usage-examples)
