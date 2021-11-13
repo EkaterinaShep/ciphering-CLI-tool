@@ -1,8 +1,7 @@
 # Ciphering CLI tool
+Encryption and decryption tool.
 
 ![Cophering-CLI-Tool](https://user-images.githubusercontent.com/77797681/141607133-275686c7-e412-4272-83a7-41eb630f434e.jpg)
-
-Encryption and decryption tool.
 
 [Features](#features) | [How it works](#how-it-works) | [Project files and folders description](#project-files-and-folders-description) | [Get started](#get-started) | [Options](#options) | [Usage examples](#usage-examples)
 
