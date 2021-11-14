@@ -59,7 +59,7 @@ Ciphering CLI tool:
    git checkout ciphering-CLI-tool
    ```
 
-5. Write text to `input.txt` file.
+5. Write and save text to `input.txt` file.
 
 6. Type in the command shell:
 
