@@ -22,9 +22,9 @@ Encryption and decryption tool.
 
 Ciphering CLI tool:
 
-1. Reads text from input file or the command shell.
+1. Reads text from an input file or a command shell.
 2. Encodes and decodes text according to passed config.
-3. Writes coded text to output file or the command shell.
+3. Writes coded text to an output file or the command shell.
 
 ## Project files and folders description
 
