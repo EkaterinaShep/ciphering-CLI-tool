@@ -92,7 +92,7 @@ The pattern for config value is {XY(-)}n, where:
 - `X` is a cipher mark: `C` (Caesar cipher (with shift 1)), `A` (Atbash cipher), `R` (ROT-8 cipher).
 - `Y` is a flag of encoding or decoding: `1` (encoding), `0` (decoding). The flag mandatory for Caesar and ROT-8 ciphers and should not be passed for Atbash cipher.
 
-For example, config value `"C1-C1-R0-A"` means "encode by Caesar cipher => encode by Caesar cipher => decode by ROT-8 => use Atbash"
+Example: config value `"C1-C1-R0-A"` means "encode by Caesar cipher => encode by Caesar cipher => decode by ROT-8 => use Atbash"
 
 ### -i, --input
 
