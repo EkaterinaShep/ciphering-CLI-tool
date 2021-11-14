@@ -98,7 +98,7 @@ Example: config value `"C1-C1-R0-A"` means "encode by Caesar cipher => encode by
 
 A path to input file. Optional option.
 
-If the option is missed, text will be read from a command shell. To run ciphering, press `Enter`. To stop Ciphering CLI tool, type `Ctrl + C`.
+If the option is missed, text will be read from a command shell. In this case, in order to run ciphering, press `Enter`. To stop Ciphering CLI tool, type `Ctrl + C`.
 
 ### -o, --output
 
