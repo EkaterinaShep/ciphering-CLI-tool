@@ -5,7 +5,6 @@ Encryption and decryption tool.
 <p align="center">
 <img src="https://user-images.githubusercontent.com/77797681/141644772-8ffd3758-a03e-4ee2-b314-426afcb345bf.jpg" alt="Ciphering CLI tool"/>
 </p>
-<br/>
 
 <p align="center">
 <a href="#features">Features</a> | <a href="#how-it-works">How it works</a> | <a href="#project-files-and-folders-description">Project files and folders description</a> | <a href="#get-started">Get started</a> | <a href="#options">Options</a> | <a href="#usage-examples">Usage examples</a>
