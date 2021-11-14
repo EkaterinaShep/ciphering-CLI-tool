@@ -67,7 +67,7 @@ Ciphering CLI tool:
    node my_ciphering_cli -c "C1-C1-R0-A" -i "./input.txt" -o "./output.txt"
    ```
 
-   Where `-c "C1-C1-R0-A"`, `-i "./input.txt"`, `-o "./output.txt"` are options. `-c`, `i`, `-o` are short aliases. `"C1-C1-R0-A"`, `"./input.txt"`, `"./output.txt"` are values of the options: `"C1-C1-R0-A"` is a [config](#-c---config), `"./input.txt"` is a path to [input file](#-i---input), `"./output.txt"` is a path to [output file](#-o---output).
+   Where `node`, `my_ciphering_cli` are mandatory arguments needed for the work of the tool. `-c "C1-C1-R0-A"`, `-i "./input.txt"`, `-o "./output.txt"` are options. `-c`, `i`, `-o` are short aliases. `"C1-C1-R0-A"`, `"./input.txt"`, `"./output.txt"` are values of the options: `"C1-C1-R0-A"` is a [config](#-c---config), `"./input.txt"` is a path to [input file](#-i---input), `"./output.txt"` is a path to [output file](#-o---output).
 
 7. Open `output.txt` file. You should see the result.
 
