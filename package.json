@@ -5,7 +5,20 @@
   "main": "my_ciphering_cli",
   "type": "module",
   "scripts": {
-    "start": "node my_ciphering_cli -c C1-C1-R0-A -i input.txt -o output.txt"
+    "start": "node my_ciphering_cli -c C1-C1-R0-A -i input.txt -o output.txt",
+    "test": "jest --coverage"
+  },
+  "jest": {
+    "testMatch": [
+      "**/__tests__/**/*.?(m)js?(x)"
+    ],
+    "transform": {
+      "^.+\\.m?js$": "babel-jest"
+    },
+    "moduleFileExtensions": [
+      "mjs",
+      "js"
+    ]
   },
   "repository": {
     "type": "git",
@@ -16,5 +29,12 @@
   "bugs": {
     "url": "https://github.com/EkaterinaShep/ciphering-CLI-tool/issues"
   },
-  "homepage": "https://github.com/EkaterinaShep/ciphering-CLI-tool#readme"
+  "homepage": "https://github.com/EkaterinaShep/ciphering-CLI-tool#readme",
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "babel-jest": "^27.3.1",
+    "jest": "^27.3.1"
+  }
 }
