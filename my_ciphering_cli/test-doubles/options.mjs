@@ -16,6 +16,15 @@ const options = {
     './error.txt',
   ],
   withInvalidConfig: ['./my_ciphering_cli', '-c', 'C1-C1-R0-A5'],
+  valid: [
+    './my_ciphering_cli',
+    '-c',
+    'C1-C1-R0-A',
+    '-i',
+    './input.txt',
+    '-o',
+    './output.txt',
+  ],
   validButWithoutConfig: ['./my_ciphering_cli', '-i', './input.txt', '-c'],
 };
 
