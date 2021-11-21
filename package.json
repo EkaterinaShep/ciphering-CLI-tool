@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node my_ciphering_cli -c C1-C1-R0-A -i input.txt -o output.txt",
-    "test": "jest",
+    "test": "jest ",
     "test:coverage": "jest --coverage"
   },
   "jest": {
