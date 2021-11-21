@@ -39,8 +39,5 @@
     "@babel/preset-env": "^7.16.0",
     "babel-jest": "^27.3.1",
     "jest": "^27.3.1"
-  },
-  "dependencies": {
-    "regenerator-runtime": "^0.13.9"
   }
 }
