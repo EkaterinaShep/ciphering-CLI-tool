@@ -10,8 +10,10 @@
     "test:coverage": "jest --coverage"
   },
   "jest": {
+    "verbose": true,
     "testMatch": [
-      "**/__tests__/**/*.?(m)js?(x)"
+      "**/__tests__/**/*.?(m)js?(x)",
+      "**/?(*.)(spec|test).?(m)js?(x)"
     ],
     "transform": {
       "^.+\\.m?js$": "babel-jest"

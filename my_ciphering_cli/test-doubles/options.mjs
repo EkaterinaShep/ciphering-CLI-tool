@@ -25,7 +25,7 @@ const options = {
     '-o',
     './output.txt',
   ],
-  validButWithoutConfig: ['./my_ciphering_cli', '-i', './input.txt', '-c'],
+  validButWithoutConfig: ['./my_ciphering_cli', '-i', './input.txt'],
 };
 
 export { options };

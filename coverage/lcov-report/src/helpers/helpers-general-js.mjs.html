@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>10/10</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>0/1</span>
+                <span class='fraction'>1/1</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/7</span>
+                <span class='fraction'>7/7</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>0/10</span>
+                <span class='fraction'>10/10</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -108,39 +108,39 @@
 <a name='L49'></a><a href='#L49'>49</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">9x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">54x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">24x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -155,40 +155,40 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">/* --------------------------------- Helpers -------------------------------- */
 // flatArr
-function <span class="fstat-no" title="function not covered" >flatArr(</span>arr, depth) {
-<span class="cstat-no" title="statement not covered" >  return arr.flat(depth);</span>
+function flatArr(arr, depth) {
+  return arr.flat(depth);
 }
 &nbsp;
 // getIndex
-function <span class="fstat-no" title="function not covered" >getIndex(</span>arr, element) {
-<span class="cstat-no" title="statement not covered" >  return arr.indexOf(element);</span>
+function getIndex(arr, element) {
+  return arr.indexOf(element);
 }
 &nbsp;
 // getStringFromArray
-function <span class="fstat-no" title="function not covered" >getStringFromArray(</span>arr) {
-<span class="cstat-no" title="statement not covered" >  return arr.join('');</span>
+function getStringFromArray(arr) {
+  return arr.join('');
 }
 &nbsp;
 // getArrayFromData
-function <span class="fstat-no" title="function not covered" >getArrFromStr(</span>str, separator = <span class="branch-0 cbranch-no" title="branch not covered" >'')</span> {
-<span class="cstat-no" title="statement not covered" >  return str.split(separator);</span>
+function getArrFromStr(str, separator = '') {
+  return str.split(separator);
 }
 &nbsp;
 // isUpperCased
-function <span class="fstat-no" title="function not covered" >isUpperCased(</span>char) {
-<span class="cstat-no" title="statement not covered" >  return char === char.toUpperCase();</span>
+function isUpperCased(char) {
+  return char === char.toUpperCase();
 }
 &nbsp;
 // Pipe
-function <span class="fstat-no" title="function not covered" >pipe(</span>...fns) {
-<span class="cstat-no" title="statement not covered" >  return function <span class="fstat-no" title="function not covered" >piped(</span>result) {</span>
-    var list = <span class="cstat-no" title="statement not covered" >[...fns];</span>
+function pipe(...fns) {
+  return function piped(result) {
+    var list = [...fns];
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    while (list.length &gt; 0) {</span>
-<span class="cstat-no" title="statement not covered" >      result = list.shift()(result);</span>
+    while (list.length &gt; 0) {
+      result = list.shift()(result);
     }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    return result;</span>
+    return result;
   };
 }
 &nbsp;
@@ -208,7 +208,7 @@ export {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sat Nov 20 2021 14:38:08 GMT+0300 (Москва, стандартное время)
+                at Sun Nov 21 2021 09:22:18 GMT+0300 (Москва, стандартное время)
             </div>
         </div>
         <script src="../../prettify.js"></script>

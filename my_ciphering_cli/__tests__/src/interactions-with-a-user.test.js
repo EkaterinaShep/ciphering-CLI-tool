@@ -1,6 +1,4 @@
 import { spawn } from 'child_process';
-import fs from 'fs';
-import { open } from 'fs/promises';
 import { errors } from '../../test-doubles/errors.mjs';
 import { options } from '../../test-doubles/options.mjs';
 import 'regenerator-runtime/runtime';
@@ -89,17 +87,18 @@ describe('Interactions with a user: error scenarios', () => {
 
 describe('Interactions with a user: success  scenarios', () => {
   const cases = [
-    [['C1-C1-R0-A'], 'Myxn xn nbdobm. Tbnnfzb ferlm "_" nhteru!'],
+    [['--config', 'C1-C1-R0-A'], 'Myxn xn nbdobm. Tbnnfzb ferlm "_" nhteru!'],
+    [['-c', 'C1-C1-R0-A'], 'Myxn xn nbdobm. Tbnnfzb ferlm "_" nhteru!'],
     [
-      ['C1-C0-A-R1-R0-A-R0-R0-C1-A'],
+      ['-c', 'C1-C0-A-R1-R0-A-R0-R0-C1-A'],
       'Vhgw gw wkmxkv. Ckwwoik onauv "_" wqcnad!',
     ],
     [
-      ['A-A-A-R1-R0-R0-R0-C1-C1-A'],
+      ['-c', 'A-A-A-R1-R0-R0-R0-C1-C1-A'],
       'Hvwg wg gsqfsh. Asggous opcih "_" gmapcz!',
     ],
     [
-      ['C1-R1-C0-C0-A-R0-R1-R1-A-C1'],
+      ['-c', 'C1-R1-C0-C0-A-R0-R1-R1-A-C1'],
       'This is secret. Message about "_" symbol!',
     ],
   ];
