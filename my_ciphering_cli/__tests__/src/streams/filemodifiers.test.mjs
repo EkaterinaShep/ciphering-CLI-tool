@@ -1,15 +1,5 @@
 import { PassThrough } from 'stream';
-import { Caesar, ROT8, Atbash } from '../../../src/streams/filemodifiers.mjs';
-
-const mockFn = jest.fn(() => {
-  return 'Hello, world!';
-});
-
-const modifiers = [
-  [new Caesar(mockFn)],
-  [new ROT8(mockFn)],
-  [new Atbash(mockFn)],
-];
+import { modifiers } from '../../../test-doubles/modifiers.mjs';
 
 test.each(modifiers)('should transform data', (modifier) => {
   const mockReader = new PassThrough();
@@ -22,6 +12,11 @@ test.each(modifiers)('should transform data', (modifier) => {
 
   modifier.on('data', (data) => {
     result += data.toString();
+
+    modifier.destroy();
+  });
+
+  modifier.on('close', () => {
     expect(result).toBe('Hello, world!');
   });
 });

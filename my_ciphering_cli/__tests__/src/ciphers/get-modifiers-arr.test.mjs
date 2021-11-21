@@ -1,5 +1,6 @@
 import { getModifiersArr } from '../../../src/ciphers/get-modifiers-arr.mjs';
 import { Caesar, ROT8, Atbash } from '../../../src/streams/filemodifiers.mjs';
+
 jest.mock('../../../src/streams/filemodifiers.mjs');
 
 test('should call to the filemodifiers constructors correct number of times', () => {

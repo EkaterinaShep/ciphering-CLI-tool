@@ -2,9 +2,7 @@ import {
   flatArr,
   getIndex,
   getStringFromArray,
-  getArrFromStr,
-  isUpperCased,
-  pipe,
+  getArrFromStr
 } from '../../../src/helpers/helpers-general-js.mjs';
 
 const ARR = [
@@ -13,8 +11,8 @@ const ARR = [
 ];
 const ARR_DEPTH = 2;
 const FLATTEN_ARR = [1, 2, 3, 4];
-const RANDOM_ELEMENT_FROM_ARRAY = 2;
-const RANDOM_ELEMENT_POSITION = 1;
+const RANDOM_ELEMENT_FROM_ARR = 2;
+const RANDOM_ELEMENT_FROM_ARR_POSITION = 1;
 const STRING = '1234';
 const STRING_SPLIT = ['1', '2', '3', '4'];
 
@@ -23,8 +21,8 @@ test('should return flatten array', () => {
 });
 
 test('should return index', () => {
-  expect(getIndex(FLATTEN_ARR, RANDOM_ELEMENT_FROM_ARRAY)).toBe(
-    RANDOM_ELEMENT_POSITION
+  expect(getIndex(FLATTEN_ARR, RANDOM_ELEMENT_FROM_ARR)).toBe(
+    RANDOM_ELEMENT_FROM_ARR_POSITION
   );
 });
 

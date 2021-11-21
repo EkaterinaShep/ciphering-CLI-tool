@@ -19,33 +19,30 @@ jest.mock('../../../src/helpers/helpers-general-js.mjs', () => {
   };
 });
 
-const args = ['node'].concat(options.valid);
+const ARGS = ['node'].concat(options.valid);
+const EXISTING_OPTION = '-c';
+const EXISTING_OPTION_VALUE = 'C1-C1-R0-A';
+const ABSENT_OPTION = '-j';
+const ABSENT_OPTION_VALUE = null;
 
 test('should return process arguments', () => {
-  process.argv = args;
+  process.argv = ARGS;
 
   expect(getArgs()).toEqual(process.argv);
 });
 
 describe('Option value retrieving', () => {
   test('should return option value', () => {
-    const option = '-c';
-    const optionValue = 'C1-C1-R0-A';
-
-    expect(getOptionValue(args, option)).toBe(optionValue);
+    expect(getOptionValue(ARGS, EXISTING_OPTION)).toBe(EXISTING_OPTION_VALUE);
   });
 
   test('should return null on option absence', () => {
-    const option = '-j';
-
-    expect(getOptionValue(args, option)).toBe(null);
+    expect(getOptionValue(ARGS, ABSENT_OPTION)).toBe(ABSENT_OPTION_VALUE);
   });
 
   test('should call getIndex with args and option', () => {
-    const option = '-c';
+    getOptionValue(ARGS, EXISTING_OPTION);
 
-    getOptionValue(args, option);
-
-    expect(getIndex).toHaveBeenCalledWith(args, option);
+    expect(getIndex).toHaveBeenCalledWith(ARGS, EXISTING_OPTION);
   });
 });

@@ -1,7 +1,6 @@
 import { spawn } from 'child_process';
 import { errors } from '../../test-doubles/errors.mjs';
 import { options } from '../../test-doubles/options.mjs';
-import 'regenerator-runtime/runtime';
 
 describe('Interactions with a user: error scenarios', () => {
   test('should return error with correct message on duplicated argument', () => {
