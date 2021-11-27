@@ -1,7 +1,6 @@
 # Ciphering CLI tool
 Encryption and decryption tool.
 
-
 <p align="center">
 <img src="https://user-images.githubusercontent.com/77797681/141644772-8ffd3758-a03e-4ee2-b314-426afcb345bf.jpg" alt="Ciphering CLI tool"/>
 </p>
@@ -52,16 +51,10 @@ Ciphering CLI tool:
    ```sh
    cd ciphering-CLI-tool
    ```
+   
+4. Write and save text to `input.txt` file.
 
-4. Switch branch:
-
-   ```sh
-   git checkout ciphering-CLI-tool
-   ```
-
-5. Write and save text to `input.txt` file.
-
-6. Type in the command shell:
+5. Type in the command shell:
 
    ```sh
    node my_ciphering_cli -c "C1-C1-R0-A" -i "./input.txt" -o "./output.txt"
@@ -73,7 +66,7 @@ Ciphering CLI tool:
    
    * `-c "C1-C1-R0-A"`, `-i "./input.txt"`, `-o "./output.txt"` are options. `-c`, `i`, `-o` are short aliases. `"C1-C1-R0-A"`, `"./input.txt"`, `"./output.txt"` are values of the options: `"C1-C1-R0-A"` is a [config](#-c---config), `"./input.txt"` is a path to [input file](#-i---input), `"./output.txt"` is a path to [output file](#-o---output).
 
-7. Open `output.txt` file. You should see the result.
+6. Open `output.txt` file. You should see the result.
 
 That's it!
 
